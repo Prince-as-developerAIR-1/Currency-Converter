@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+
+            <div class="header"><h1>Currency</h1><span>* Live rates</span></div>
+
+            <div class="amount-box">
+                <label>AMOUNT</label>
+                <input type="number" id="amount" value="100">
+            </div>
+
+            <div class="currency-row">
+                <div class="select-wrap"><label>FROM</label><select id="from"></select></div>
+                <button class="swap-btn" id="swapBtn">↑↓</button>
+                <div class="select-wrap"><label>TO</label><select id="to"></select></div>
+            </div>
+
+            <button class="convert-btn" id="convertBtn">Convert</button>
+
+            <div class="result-box" id="result">
+                <div class="main">Select currencies</div>
+                <div class="sub">Rates update every minutes</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
